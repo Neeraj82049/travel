@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+     *{
+        margin: 0px;
+        padding: 0px;
+     }
+
+     .navmenu{
+        
+        background-color: rgb(255, 255, 255);
+        
+        margin: 2px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+       
+     }
+     .navmenu a{
+        font-size: 25px;
+        font-family: cursive;
+        text-decoration: none;
+        
+        color: black;
+    }
+    .navmenu a:hover{
+        color: orangered;
+    }
+     main{
+        position: relative;
+         height: 800px; 
+         width: 1920px;
+        
+        overflow: hidden;
+     }
+    .fimage{
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 0px;
+        
+        object-fit: cover;
+        z-index: -1;
+    }
+    .content{
+        color: aliceblue;
+        text-align: center;
+       height: 600px;
+        padding-top: 20%;
+    }
+    .content h1{ 
+                text-shadow: 2px 3px rgb(0, 0, 0); 
+                font-size:60px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .content h5{
+                text-shadow: 1px 2px rgb(0, 0, 0); 
+                font-size:30px;
+                font-family:'Times New Roman', Times, serif
+            }
+            .btn{
+              
+                  background-color:rgb(240, 73, 7);
+                border-radius: 30px;
+                font-size:20px;
+                text-decoration: none;
+                color: #ffffff;
+                
+                padding: 10px 20px;
+            }
+ .footer{
+                padding: 23px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .footer p{
+                font-size:23px;
+                text-align: center;
+            }
+        .destinations h2{
+            margin-bottom: 20px;
+            margin-top: 25px;
+            font-size: 45px;
+            text-align: center;
+        }
+        .destination-item{
+            text-align: left;
+        }
+        .destionation-item img{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+      .destionation-item h4{
+         margin-bottom: 10px;
+         font-size: 25px ;
+      }
+      .destination-item p{
+        font-size:12px;
+      }
+        .destination-grid{
+          display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+       
+        
+            <ul class="navmenu">
+                <li><a href="">Flights</a></li>
+                <li><a href="">Hotels</a></li>
+                <li><a href="">Holidays</a></li>
+                <li><a href="">Buses</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="fimage">
+        <img src="flight.jpg" alt="flight" width="1920px" >
+        </div>
+    
+    <div class="content">
+        <h1>Welcome To Our Travel Website</h1><br><br>
+        <h5>Discover amazing destinations and book your next trip with us. </h5><br><br>
+        <a href="#" class="btn">Book Now</a>
+        </div>
+</main>
+<div class="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="destination-grid">
+        <div class="destionation-item">
+    <img src="france.jpg" alt="">
+    <h4>France</h4>
+    <p>Experience the romance and culture of the City of Lights, from the
+            Eiffel Tower to the Louvre Museum.</p>
+</div>
+ <div class="destionation-item">
+      <img src="russia.jpg" alt="">
+    <h4>Thailand</h4>
+    <p>Thailand is a country located in Southeast Asia, known for its rich cultural heritage, stunning landscapes, and vibrant cities. It is famous for its beautiful beaches.</p> 
+      </div>      
+           <div class="destionation-item">  
+          <img src="london.jpg" alt="">
+    <h4>Tokyo</h4>
+    <p>Explore the vibrant city of Tokyo and immerse yourself in its
+            unique blend of ancient traditions and modern technology.</p>
+</div>
+        </div>
+
+</div>
+<div class="footer">
+<p>&copy;2025 Travel Company. All rights reserved.</p>
+</div>
+</body>
+</html>
